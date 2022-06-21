@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chi sono -  Giuseppe Spataro</title>
+        <link href="./assets/css/ui.css" rel="stylesheet" />
+        <script src="./assets/js/ui.js" defer></script>
+        <script src="https://kit.fontawesome.com/c6d3a53c06.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="bg-slate-800 text-white m-0 p-0 min-h-screen">
+        <div class="flex flex-col min-h-screen">
+            <div class="bg-slate-900">
+    <div class="px-4 xl:px-0 xl:w-2/3 mx-auto flex items-center py-8">
+        <div class="basis-1/2">
+            <div class="w-fit hover:animate-pulse">
+                <a href="./index.html">
+                    <div class="hidden xl:block">
+                        <span class="text-3xl uppercase">Giuseppe <b class="font-semibold">Spataro</b></span>
+                        <div class="text-lg text-center text-white/70">Sviluppatore Web &bullet; Pianista</div>
+                    </div>
+                    <div class="xl:hidden">
+                        <span class="text-3xl uppercase border-2 border-slate-200 p-3">G<b class="font-semibold">S</b></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="basis-1/2 text-xl">
+            <div class="block lg:hidden text-right text-3xl">
+                <a onclick="uiOpenNavbar()" class="py-3 px-4 inline-block text-white hover:text-white/70 cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <div class="
+                hidden
+                fixed
+                top-0
+                bottom-0
+                right-0
+                w-full
+                md:w-1/2
+                p-8
+                bg-slate-900
+                shadow-slate-900
+                shadow-lg
+                lg:block
+                lg:static
+                lg:w-full
+                lg:p-0
+                lg:bg-transparent
+                lg:shadow-none
+            " id="navbar">
+                <div class="overlay md:fixed top-0 left-0 bottom-0 w-1/2 md:bg-black/30 lg:hidden" onclick="uiCloseNavbar()"></div>
+                <div class="absolute lg:hidden top-2 right-2 text-2xl">
+                    <a onclick="uiCloseNavbar()" class="py-3 px-4 inline-block text-white hover:text-white/70 cursor-pointer">
+                        <i class="fa-solid fa-times"></i>
+                    </a>
+                </div>
+                <ul class="flex flex-col space-y-1 lg:flex-row lg:justify-end lg:space-y-0 lg:space-x-1 -mr-4 whitespace-nowrap">
+                                            <li>
+                            <a href="./index.html" class="
+                                py-3 px-4 inline-block
+                                font-semibold
+                                                                    hover:text-white/70
+                                    text-white
+                                                            ">Home</a>
+                        </li>
+                                            <li>
+                            <a href="./portfolio.html" class="
+                                py-3 px-4 inline-block
+                                font-semibold
+                                                                    hover:text-white/70
+                                    text-white
+                                                            ">Portfolio</a>
+                        </li>
+                                            <li>
+                            <a href="./about.html" class="
+                                py-3 px-4 inline-block
+                                font-semibold
+                                                                    text-violet-300
+                                                            ">Chi sono</a>
+                        </li>
+                                            <li>
+                            <a href="./contacts.html" class="
+                                py-3 px-4 inline-block
+                                font-semibold
+                                                                    hover:text-white/70
+                                    text-white
+                                                            ">Contatti</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <div class="flex-1">
+        <div class="bg-violet-600 pt-20 pb-36">
+            <div class="w-full px-4 text-2xl text-justify xl:w-2/3 xl:px-0 xl:mx-auto">
+                <h1 class="mb-8">Chi sono</h1>
+                <p class="mt-8">
+                    Sono un Maestro specializzato in pianoforte con approfondite conoscenze nell'ambito dello sviluppo web. Ho una forte passione per tutto ciò che riguarda la musica e la tecnologia.
+                    Anche se a primo impatto le due materie non sembrano collegate, ritengo che musica e programmazione abbiano molto in comune, che entrambe siano una forma d'arte e che possano essere utilizzate una a supporto dell'altra.
+                    Amo la puntualità, l'organizzazione e la precisione.
+                </p>
+            </div>
+        </div>
+        <div class="pb-20">
+            <div class="w-full px-4 text-xl xl:w-2/3 xl:px-0 md:mx-auto">
+                <div class="bg-slate-800 rounded-t-xl -mt-20 md:hidden">
+                    <ul class="flex items-stretch">
+                        <li class="flex-1 text-center hidden" id="selector-musician">
+                            <a onclick="toggleProfession()" class="flex w-full py-4 px-8 rounded-t-xl hover:bg-slate-700">
+                                <div>
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </div>
+                                <div class="flex-1">
+                                    Pianista
+                                </div>
+                            </a>
+                        </li>
+                        <li class="flex-1" id="selector-developer">
+                            <a onclick="toggleProfession()" class="flex w-full py-4 px-8 rounded-t-xl hover:bg-slate-700">
+                                <div class="flex-1">
+                                    Sviluppatore Web
+                                </div>
+                                <div>
+                                    <i class="fa solid fa-angle-right"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex md:space-x-4 xl:space-x-14">
+                    <div class="w-full grow-0 bg-slate-900 shadow-lg shadow-slate-900 p-14 rounded-b-xl md:block md:basis-1/2 md:rounded-2xl md:-mt-20" id="musician">
+                        <div class="text-center">
+                            <span class="text-5xl text-cyan-400"><i class="fa-solid fa-music"></i></span>
+                            <h2 class="my-5 font-semibold">Pianista</h2>
+                        </div>
+                        <p class="my-10 text-center">
+                            Sostengo concerti come pianista solista e accompagnatore oltre ad insegnare a studenti di qualsiasi età.
+                        </p>
+                            <p class="mt-10 mb-5 text-center">
+        <b class="font-semibold text-cyan-400">Cosa mi piace fare:</b>
+    </p>
+            <p class="my-5 text-center">
+            Concerti, Insegnamento
+        </p>
+            <p class="mt-10 mb-5 text-center">
+        <b class="font-semibold text-cyan-400">Di cosa mi occupo:</b>
+    </p>
+                <ul class="my-5 text-center">
+                            <li>Tecnica</li>
+                            <li>Teoria Musicale</li>
+                            <li>Accompagnamento</li>
+                    </ul>
+        <p class="mt-10 mb-5 text-center">
+        <b class="font-semibold text-cyan-400">Quali autori ho studiato:</b>
+    </p>
+                <ul class="my-5 text-center">
+                            <li>J.S. Bach</li>
+                            <li>W.A. Mozart</li>
+                            <li>L.V. Beethoven</li>
+                            <li>F. Chopin</li>
+                            <li>F. Liszt</li>
+                            <li>S. Rachmaninov</li>
+                            <li>Altri</li>
+                    </ul>
+    
+                    </div>
+                    <div class="w-full grow-0 bg-slate-900 shadow-lg shadow-slate-900 p-14 rounded-b-xl hidden md:block md:basis-1/2 md:rounded-2xl md:-mt-20" id="developer">
+                        <div class="text-center">
+                            <span class="text-5xl text-cyan-400"><i class="fa-solid fa-code"></i></span>
+                            <h2 class="my-5 font-semibold">Sviluppatore Web</h2>
+                        </div>
+                        <p class="my-10 text-center">
+                            Mi piace sviluppare progetti da zero concentrandomi sulla parte backend e impegnandomi a rendere il mio codice facilmente riutilizzabile.
+                        </p>
+                            <p class="mt-10 mb-5 text-center">
+        <b class="font-semibold text-cyan-400">Quali linguaggi uso:</b>
+    </p>
+            <p class="my-5 text-center">
+            PHP, MySQL, HTML, CSS, Javascript
+        </p>
+            <p class="mt-10 mb-5 text-center">
+        <b class="font-semibold text-cyan-400">Quali librerie uso:</b>
+    </p>
+                <ul class="my-5 text-center">
+                            <li>Composer</li>
+                            <li>Twig</li>
+                            <li>Sass</li>
+                            <li>TailwindCSS</li>
+                            <li>Bootstrap</li>
+                            <li>UIKit</li>
+                    </ul>
+        <p class="mt-10 mb-5 text-center">
+        <b class="font-semibold text-cyan-400">Quali strumenti uso:</b>
+    </p>
+                <ul class="my-5 text-center">
+                            <li>VS Code</li>
+                            <li>Git/Github</li>
+                            <li>Postman</li>
+                            <li>Beekeeper Studio</li>
+                            <li>Terminale</li>
+                            <li>Linux</li>
+                            <li>Windows</li>
+                    </ul>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-900/50 py-20">
+            <div class="w-full px-4 xl:w-2/3 xl:px-0 xl:mx-auto">
+                <h1 class="mb-8 text-center">Formazione</h1>
+                <div class="flex flex-col space-y-10 md:flex-row md:space-y-0 md:space-x-10">
+                                            <div class="bg-slate-800 rounded-xl p-8 flex-1">
+                            <h2 class="mb-4">Laurea Magistrale - Pianoforte</h2>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-1 text-lg">
+                                <div>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    2019 - 2022
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-location-pin"></i>
+                                    Catania (CT)
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    110/110 cum laude
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    Conservatorio V. Bellini
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="bg-slate-800 rounded-xl p-8 flex-1">
+                            <h2 class="mb-4">Laurea Triennale - Pianoforte</h2>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-1 text-lg">
+                                <div>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    2016 - 2019
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-location-pin"></i>
+                                    Catania (CT)
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    110/110 cum laude
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    Conservatorio V. Bellini
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let cardMusician = document.getElementById("musician");
+        let cardDeveloper = document.getElementById("developer");
+        let selectorMusician = document.getElementById("selector-musician");
+        let selectorDeveloper = document.getElementById("selector-developer");
+
+        function toggleProfession() {
+            cardMusician.classList.toggle("hidden");
+            cardDeveloper.classList.toggle("hidden");
+            selectorMusician.classList.toggle("hidden");
+            selectorDeveloper.classList.toggle("hidden");
+        }
+    </script>
+            <div class="bg-slate-900 ">
+    <div class="w-full px-4 xl:px-0 xl:w-2/3 flex flex-col space-y-4 lg:space-y-0 lg:flex-row mx-auto py-8 text-xl">
+        <div class="basis-1/2 text-center lg:text-left">
+            &copy; 2022 Giuseppe Spataro. All rights reserved.
+        </div>
+        <div class="basis-1/2">
+            <div class="max-w-fit mx-auto lg:mr-0 lg:ml-auto">
+                <ul class="flex items-center">
+        <li class="mr-1 last-of-type:mr-0">
+        <a href="https://github.com/gspataro" class="
+            py-3 px-4
+            text-white/60
+            hover:text-white
+        " target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </li>
+        <li class="mr-1 last-of-type:mr-0">
+        <a href="https://linked.in/in/gspataro96" class="
+            py-3 px-4
+            text-white/60
+            hover:text-white
+        " target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </li>
+        <li class="mr-1 last-of-type:mr-0">
+        <a href="https://twitter.com/gspataro96" class="
+            py-3 px-4
+            text-white/60
+            hover:text-white
+        " target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </li>
+    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+</html>
